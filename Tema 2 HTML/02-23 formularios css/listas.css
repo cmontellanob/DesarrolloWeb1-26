@@ -1,0 +1,10 @@
+#menu {
+    background-color: #d5d1d1;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+}
+#menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
