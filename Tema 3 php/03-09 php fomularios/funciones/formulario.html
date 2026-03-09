@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h2>Formulario de calculos</h2>
+
+    <form action="calcular.php" method="get">
+        <label for="n">Introduzca n</label>
+        <input type="number" name="n">
+        <label for="opercion">Introduzca la operacion</label>
+        <select name="operacion">
+            <option value="fibonacci">fibonacci</option>
+            <option value="factorial">factorial</option>
+        </select>
+        <input type="submit" value="calcular">
+    </form> 
+</body>
+</html>
