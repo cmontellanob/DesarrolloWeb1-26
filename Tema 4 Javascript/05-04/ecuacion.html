@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="a">a=</label> <input type="number" id="a">x2
+    <br>
+    <label for="b">b=</label><input type="number" id="b"> x
+    <br>
+    <label for="c">c=</label><input type="number" id="c">=0
+    <br>
+    <button onclick="calcular()">Calcular</button>
+    <br>
+    <label for="x1">x1=</label> <input type="text" id="x1">
+    <br>
+    <label for="x2">x2=</label> <input type="text" id="x2">
+    <script>
+        function calcular(){
+            a=document.getElementById("a").value;
+            b=document.getElementById("b").value;
+            c=document.getElementById("c").value;
+            discriminante=Math.pow(b, 2)-4*a*c;
+            
+            if(discriminante<0){
+                discriminante=discriminante*(-1);
+                sufijo="i";
+                x1=-b/(2*a)+"+"+Math.round( Math.sqrt(discriminante),2)/(2*a)+sufijo;
+                x2=-b/(2*a)+"-"+Math.round( Math.sqrt(discriminante),2)/(2*a)+sufijo;
+                
+            }else {
+                sufijo="";
+                x1=(-b+Math.round( Math.sqrt(discriminante),2))/2*a;
+                x2=(-b-Math.round( Math.sqrt(discriminante),2))/2*a;
+            }
+            
+            document.getElementById("x1").value=x1;
+            document.getElementById("x2").value=x2;
+            if (sufijo=="i"){
+                document.getElementById("x1").style.color="red";
+                document.getElementById("x2").style.color="red";;
+            } 
+            else
+            {
+                document.getElementById("x1").style.color="black";
+                document.getElementById("x2").style.color="black";;
+            }
+        }
+    </script>
+</body>
+</html>

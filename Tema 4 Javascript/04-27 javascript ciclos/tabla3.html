@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .celda {
+        background-color: yellow;
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      n = prompt("Intruduzca la cantidad de filas");
+      m = prompt("Intruduzca la cantidad de columnas");
+      html = `<table border="1" >`;
+      for (i = 0; i < n; i++) {
+        html += `<tr>`;
+        for (j = 0; j < m; j++) {
+          console.log(i);
+          console.log(j);
+
+          html += `<td class="celda"> ${j} </td>`;
+        }
+        html += `</tr>`;
+      }
+      html += `</table>`;
+      document.writeln(html);
+    </script>
+  </body>
+</html>

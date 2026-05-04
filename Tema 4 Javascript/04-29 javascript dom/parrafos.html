@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam officiis molestias sunt iusto maiores repellat similique repellendus. Ducimus voluptates molestiae soluta ad fuga earum praesentium sunt, voluptas unde. Voluptatibus, modi!</p>
+    <p>Dolorem vitae, adipisci reiciendis quam, harum blanditiis quaerat debitis pariatur cum, quae illo officia sed officiis consequuntur! Magni esse dicta omnis amet nesciunt, sit repellendus iste. Quasi, libero doloremque. Sequi!</p>
+    <p onmouseover="resaltar(this)">Velit beatae voluptates dolor, culpa quia quis necessitatibus minus maxime vero quas repellendus ipsum, aperiam, fugiat sint rem eveniet quasi. Veritatis quibusdam ut nesciunt, sint voluptatem ad velit eveniet perferendis.</p>
+    <p>Tenetur dolorem commodi quaerat inventore praesentium magnam adipisci exercitationem dignissimos aspernatur reiciendis placeat obcaecati nisi aliquid quae, pariatur, perferendis itaque excepturi nemo optio nam cum, harum id? Neque, consectetur officia!</p>
+    <p>Enim vero hic illo a natus et, perferendis quia numquam eveniet earum fugiat quam consequatur sint nam laudantium harum excepturi at beatae delectus inventore dolore facilis sequi accusamus quibusdam? Dolor!</p>
+    <input type="color" name="color" id="color">
+    <button onclick="contar()" >Calcular</button>
+    <script>
+        function contar()
+        {
+        var parrafos=document.getElementsByTagName('p');
+        alert(parrafos.length);
+        console.log(parrafos);
+        let color=document.getElementById('color').value;
+        document.getElementsByTagName('body')[0].style.backgroundColor=color;
+        }
+        function resaltar(parrafo)
+        {
+            console.log(parrafo.style);
+            parrafo.style.color="red";
+            parrafo.style.fontWeight="bold";
+          //  var parrafos=document.getElementsByTagName('p');
+            // parrafos.array.forEach(elemento => {
+            //     elemento.style.color="red";
+            //     elemento.style.fontWeight="bold";
+                
+            // });
+
+            // for (i=0;i<parrafos.length;i++)
+            // {
+            //     parrafos[i].style.color="red";
+            //     parrafos[i].fontWeight="bold";
+            // }
+        }
+
+
+    </script>
+</body>
+</html>
