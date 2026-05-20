@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+
+
+
+<div class="modal" id="modal-crear">
+    <div class="modal-content">
+
+
+    <form action="javascript:registrarReceta()" enctype="multipart/form-data" method="post" id="form-receta">
+        <label for="titulo"></label>
+        <input type="text" name="titulo" id="titulo">
+        <br>
+        <label for="idtiporeceta">Tipo de la receta</label>
+        <select name="idtiporeceta" id="idtiporeceta">
+        
+        </select>
+        <br>
+        <label for="fotografia">Imagen</label>
+        <input type="file" name="fotografia" id="fotografia"><br>
+  
+        <label for="preparacion">Preparacion</label>
+        <textarea name="preparacion" id="preparacion" cols="30" rows="2"></textarea>
+       <br>
+        <input type="submit" value="Enviar">
+    </form>
+    </div>
+</div>
+</body>
+</html>

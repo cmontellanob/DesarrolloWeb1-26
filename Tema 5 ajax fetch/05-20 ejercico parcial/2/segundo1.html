@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>2do Parcial - 1</title>
+
+    <link rel="stylesheet" href="estilos.css">
+      
+    </style>
+    <script src="fetch.js"></script>
+
+
+</head>
+<body>
+
+<header>
+    Segundo Parcial 1 SIS 256 - Tecnologia y Desarrollo Web
+</header>
+
+<div id="info">
+    Estudiante: ........................ &nbsp;&nbsp;|&nbsp;&nbsp; CU: .......................
+</div>
+
+<div id="contenedor">
+
+    <div id="menu">
+       
+    <button class="btnMenu" id="btn1">Pregunta 1 </button>
+    <button class="btnMenu" id="btn2" onclick="cargarModal('form-receta.html')">Pregunta 2 </button>
+    <button class="btnMenu" id="btn3" onclick="cargarContenido('listar-recetas.php')">Pregunta 3 </button>
+    <button class="btnMenu" id="btn4" onclick="cargarContenido('temas.html')">Pregunta 4 </button>
+    
+    </div>
+    <div id="contenido">
+        <h2>Bienvenido</h2>
+        <p>Seleccione una opción del menú.</p>
+    </div>
+</div>
+
+<div id="mensaje">
+   Inicializando...
+</div>
+
+<div id="espacio-modal">
+
+</div>
+
+</body>
+</html>
